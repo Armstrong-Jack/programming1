@@ -9,3 +9,4 @@ def test_scope():
 print(test_scope())
 
 print(my_veriable)
+print("hello world")
