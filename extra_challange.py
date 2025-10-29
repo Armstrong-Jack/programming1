@@ -48,3 +48,5 @@ print(vertical_wall, "name:      ", users_name, space2,  vertical_wall,)
 print(vertical_wall, "username:  ", username, space1,  vertical_wall)
 print(vertical_wall, "location:  ", location, space3, vertical_wall)
 print(cornor, horizontal_wall, cornor)
+
+#lol cana ctully code from github
