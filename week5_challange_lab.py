@@ -1,5 +1,5 @@
 def calculate_factorial(n):
-    total = 0 breakpoint # <-- Bug #1
+    total = 0  # <-- Bug #1
     for i in range(1, n + 1):
         total = total * i # <-- Bug #2 (logic is flawed)
     return total
