@@ -7,4 +7,6 @@ for i in range(len(questions)):
     if user_answer == answers[i]:
         print("correct")
         score += 1
+    else:
+        print("Incorrect")
 print(f"{score}/3")
