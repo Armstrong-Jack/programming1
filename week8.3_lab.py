@@ -13,7 +13,7 @@ fake_api_data = {
 # 3. Access the "contact" dictionary: ... ["contact"]
 # 4. Access the "email" key: ... ["email"]
 
-while True:
+"""while True:
     try:
         entered_id = int(input("what user are you trying to access?(Numbers ONLY!)"))
         break
@@ -36,4 +36,15 @@ elif entered_id == 2:
     email2 = email1["email"]
     print(email2)
 else:
-    "incorrect input"
+    "incorrect input" """
+
+while True:
+    try:
+        entered_id = int(input("what user are you trying to access?(Numbers ONLY!)"))
+        break
+    except ValueError:
+        print("Incorrect input")
+for user in fake_api_data["users"]:
+    id = user["id"] 
+    if id == entered_id:
+        print(user["contact"]["email"])
