@@ -13,6 +13,8 @@ def generate_report(data):
     for item in inventory:
         #used to stop repeating int(item["stock"])
         stock = int(item["stock"])
+        print(item)
+        print(stock)
         #used to see if the price of the element is bigger then the current value of highest_price
         if int(item["price"]) > highest_price:
             # if it is bigger then highest price it replaces the current one and is used for the next iteration of highest price
@@ -22,7 +24,8 @@ def generate_report(data):
             #adds the name of the item to the list of out_of_stock
             out_of_stock.append(item["name"])
     #used to calculate the overall amount of items they have in stock
-    total_number_of_items_in_stock += stock
+        total_number_of_items_in_stock += stock
+        print(total_number_of_items_in_stock)
     #prints the report
     print(
         f"Inventory Report\n"
